@@ -7,4 +7,4 @@ This script allows and end users to easily configure an ESP to connect to a loca
 
 
 ## Thank you
-This is based on Andy Reischles work [Captive Portal](https://github.com/reischle/CaptiveIntraweb/tree/dev).
+This is based on Andy Reischles [Captive Portal](https://github.com/reischle/CaptiveIntraweb/tree/dev).
