@@ -1,4 +1,4 @@
-# ESP8266 SoftAP WiFI Config
+# ESP8266 SoftAP WiFi Config
 This script allows and end users to easily configure an ESP to connect to a local WiFi.
  * Start ESP
  * Connect to the AP it provides
@@ -7,4 +7,4 @@ This script allows and end users to easily configure an ESP to connect to a loca
 
 
 ## Thank you
-This is based on Andy Reischles work [Captive Portal](https://github.com/reischle/CaptiveIntraweb/tree/dev)
+This is based on Andy Reischles work [Captive Portal](https://github.com/reischle/CaptiveIntraweb/tree/dev).
