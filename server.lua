@@ -61,7 +61,7 @@ srv:listen(80,function(conn)
 	
 	
 	local foundmatch = 0
-	local a = {'index.html','background.png'}
+	local a = {'index.html'}
 	for _,v in pairs(a) do
 		if v == url then
 			foundmatch=1
@@ -80,12 +80,6 @@ srv:listen(80,function(conn)
         DataToGet = 0
         return
     end    
-
-   -- conn:send("<html><body><h1>NodeMCU IDE</h1>")
-  
-    
-   -- conn:send("</body></html>")
-
   end)
   
   conn:on("sent",function(conn) 
