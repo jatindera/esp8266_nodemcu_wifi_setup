@@ -5,21 +5,16 @@
     <title>Connect gadget to you WiFi</title>
 
     <style media="screen" type="text/css">
-        /*basic reset*/
         * {margin: 0; padding: 0;}
-
         html {
 	        height: 100%;
 	        background: 
 		        linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)), 
-		        url(data:image/png;base64,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);
+		        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA8AgMAAACm+SSwAAAADFBMVEVBR1FFS1VHTlg8Q0zU/YXIAAADVElEQVQ4yy1TTYvTUBQ9GTKiYNoodsCF4MK6U4TZChOhiguFWHyBFzqlLl4hoeNvEBeCrlrhBVKq1EUKLTP+hvi1GyguXqBdiZCBzGqg20K8L3hDQnK55+OeJNguHx6UujYl3dL5ALn4JOIUluAqeAWciyGaSdvngOWzNT+G0UyGUOxVOAdqkjXDCbBiUyjZ5QzYEbGadYAi6kHxth+kthXNVNCDofwhGv1D4QGGiM9iAjbCHgr2iUUpDJbs+VPQ4xAr2fX7KXbkOJMdok965Ksb+6lrjdkem8AshIuHm9Nyu19uTunYlOXDTQqi8VgeH0kBXH2xq/ouiMZPzuMukymutrBmulUTovC6HqNFW2ZOiqlpSXZOTvSUeUPxChjxol8BLbRy4gJuhV7OR4LRVBs3WQ9VVAU7SXgK2HeUrOj7bC8YsUgr3lEV/TXB7hK90EBnxaeg1Ov15bY80M736ekCGesGAaGvG0Ct4WRkVQVHIgIM9xJgvSFfPay8Q6GNv7VpR7xUnkvhnMQCJDYkYOtNLihV70tCU1Sk+BQrpoP+HLHUrJkuta40C6LP5GvBv+Hqo10ATxxFrTPvNdPr7XwgQud6RvQN/sXjBGzqbU27wcj9cgsyvSTrpyXV8gKpXeNJU3aFl7MOdldzV4+HfO19jBa5f2IjWwx1OLHIvFHkqbBj20ro1g7nDfY1DpScvDRUNARgjMMVO0zoMjKxJ6uWCPP+YRAWbGoaN8kXYHmLjB9FXLGOazfFVCvOgqzfnicNPrHtPKlex2ye824gMza0cTZ2sS2Xm7Qst/UfFw8O6vVtmUKxZy9xFgzMys5cJ5fxZw4y37Ufk1Dsfb8MqOjYxE3ZMWxiDcO0PYUaD2ys+8OW1pbB7/e3sfZeGVCL0Q2aMjjPdm2sxADuejZxHJAd8dO9DSUdA0V8/NggRRanDkBrANn8yHlEQOn/MmwoQfQF7xgmKDnv520bS/pgylP67vf3y2V5sCwfoCEMkZClgOfJAFX9eXefR2RpnmRs4CDVPceaRfoFzCkJVJX27vWZnoqyvmtXU3+dW1EIXIu8Qg5Qta4Zlv7drUCoWe8/8MXzaEwux7ESE9h6qnHj3mIO0/D9RvzfxPmjWiQ1vbeSk4rrHwhAre35EEVaAAAAAElFTkSuQmCC);
         }
-
         body {
 	        font-family: arial, verdana;
         }
-
-        /*form styles*/
         #msform {
 	        width: 400px;
 	        margin: 50px auto;
@@ -37,9 +32,7 @@
 	        width: 80%;
 	        margin: 0 10%;
         }
-
-        /*inputs*/
-        #msform input, #msform textarea {
+        #msform input {
 	        padding: 15px;
 	        border: 1px solid #ccc;
 	        border-radius: 3px;
@@ -50,14 +43,13 @@
 	        color: #2C3E50;
 	        font-size: 13px;
         }
-        /*buttons*/
         #msform .action-button {
 	        width: 100px;
 	        background: #27AE60;
 	        font-weight: bold;
 	        color: white;
 	        border: 0 none;
-	        border-radius: 1px;
+	        border-radius: 2px;
 	        cursor: pointer;
 	        padding: 10px 5px;
 	        margin: 10px 5px;
@@ -65,8 +57,6 @@
         #msform .action-button:hover, #msform .action-button:focus {
 	        box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
         }
-
-        /*headings*/
         .fs-title {
 	        font-size: 15px;
 	        text-transform: uppercase;
@@ -83,13 +73,13 @@
 
 </head>
 <body>
-<form id="msform" method="post">
+<form id="msform">
 	<fieldset>
 		<h2 class="fs-title">WiFi Login</h2>
 		<h3 class="fs-subtitle">Connect gadget to your WiFi</h3>
-		<input type="text" name="fname" placeholder="WiFi Name" />
-		<input type="password" name="lname" placeholder="Password" />
-		<input type="submit" name="submit" class="submit action-button" value="Submit" />
+		<input type="text" name="wifi_ssid" placeholder="WiFi Name" />
+		<input type="password" name="wifi_password" placeholder="Password" />
+		<input type="submit" name="save" class="submit action-button" value="Save" />
 </form>
 </body>
 </html>
