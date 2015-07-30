@@ -1,6 +1,6 @@
 function run_setup()
-    print("Opening WiFi credentials portal")
     wifi.setmode(wifi.SOFTAP)
+    print("Opening WiFi credentials portal")
     dofile ("dns-liar.lua")
     dofile ("server.lua")
 end
