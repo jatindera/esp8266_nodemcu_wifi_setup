@@ -8,9 +8,10 @@ This script allows and end users to easily configure an ESP to connect to a loca
  * The ESP reboots and connects to your actual WiFi
 
 ## This is magic! How can I replicate it?
- * Build NodeMCU with the nodemcu_use_dns.patch applied (or #define USE_DNS 1, set in dhcpserver.h)
+ * In dhcpserver.h, #define USE_DNS 1
+ * Build NodeMCU
  * Flash NodeMCU
- * Upload all .lua files _and_ index.html
+ * Upload all .lua files **and** index.html
  * Reboot ESP
  
 ## Thank you
