@@ -1,5 +1,9 @@
 function run_setup()
     wifi.setmode(wifi.SOFTAP)
+    cfg={}
+    cfg.ssid="SetupGadget"
+    wifi.ap.config(cfg)
+
     print("Opening WiFi credentials portal")
     dofile ("dns-liar.lua")
     dofile ("server.lua")
