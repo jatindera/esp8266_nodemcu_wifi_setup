@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=380">
     <title>Connect gadget to you WiFi</title>
 
     <style media="screen" type="text/css">
@@ -15,22 +16,27 @@
         body {
 	        font-family: arial, verdana;
         }
+        .center-div {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 320px;
+            height: 274px;
+        }
         #msform {
-	        width: 400px;
-	        margin: 50px auto;
 	        text-align: center;
 	        position: relative;
         }
         #msform fieldset {
 	        background: white;
 	        border: 0 none;
-	        border-radius: 3px;
+	        border-radius: 5px;
 	        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	        padding: 20px 30px;
-	
 	        box-sizing: border-box;
-	        width: 80%;
-	        margin: 0 10%;
         }
         #msform input {
 	        padding: 15px;
@@ -49,7 +55,7 @@
 	        font-weight: bold;
 	        color: white;
 	        border: 0 none;
-	        border-radius: 2px;
+	        border-radius: 3px;
 	        cursor: pointer;
 	        padding: 10px 5px;
 	        margin: 10px 5px;
@@ -73,14 +79,16 @@
 
 </head>
 <body>
-<form id="msform">
-	<fieldset>
-		<h2 class="fs-title">WiFi Login</h2>
-		<h3 class="fs-subtitle">Connect gadget to your WiFi</h3>
-		<input type="text" autocorrect="off" autocapitalize="none" name="wifi_ssid" placeholder="WiFi Name" />
-		<input type="password" name="wifi_password" placeholder="Password" />
-		<input type="submit" name="save" class="submit action-button" value="Save" />
-	</fieldset>
-</form>
+<div class="center-div">
+	<form id="msform">
+		<fieldset>
+			<h2 class="fs-title">WiFi Login</h2>
+			<h3 class="fs-subtitle">Connect gadget to your WiFi</h3>
+			<input type="text" autocorrect="off" autocapitalize="none" name="wifi_ssid" placeholder="WiFi Name" />
+			<input type="password" name="wifi_password" placeholder="Password" />
+			<input type="submit" name="save" class="submit action-button" value="Save" />
+		</fieldset>
+	</form>
+</div>
 </body>
 </html>
