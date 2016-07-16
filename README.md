@@ -1,4 +1,4 @@
-# ESP8266 NodeMCU WiFi Setup
+# ESP8266 NodeMCU WiFi Setup (project DEPRECATED by nodemcu enduser_setup module)
 ![Alt text](/../images/screenshot.png?raw=true "Screenshot")
 
 This script allows and end users to easily configure an ESP to connect to a local WiFi.
