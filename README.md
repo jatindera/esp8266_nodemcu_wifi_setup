@@ -1,4 +1,4 @@
-# DEPRECATED by nodemcu enduser_setup module
+# **DEPRECATED** by nodemcu enduser_setup module
 
 # ESP8266 NodeMCU WiFi Setup 
 ![Alt text](/../images/screenshot.png?raw=true "Screenshot")
